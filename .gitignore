@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CommandLineUtils/.vs
+/CommandLineUtils/src/Adeptik.CommandLineUtils/Adeptik.CommandLineUtils.xproj.user
+/CommandLineUtils/src/Adeptik.CommandLineUtils/project.lock.json
+/CommandLineUtils/src/Adeptik.CommandLineUtils/bin
+/CommandLineUtils/src/Adeptik.CommandLineUtils/obj
