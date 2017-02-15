@@ -1,7 +1,7 @@
 # Adeptik Command Line Utils
 Utilities for creating command line applications
 
-## Getting started
+## Installation
 
 In project.json file add
 
