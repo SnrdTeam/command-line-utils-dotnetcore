@@ -10,7 +10,8 @@
     "summary": "The library can parse command line arguments and execute configured commands. It supports commands with options.",
     "owners": [ "Adeptik", "Snrd" ],
     "projectUrl": "https://github.com/SnrdTeam/command-line-utils-dotnetcore",
-    "licenseUrl": "https://github.com/SnrdTeam/command-line-utils-dotnetcore/blob/master/LICENSE"
+    "licenseUrl": "https://github.com/SnrdTeam/command-line-utils-dotnetcore/blob/master/LICENSE",
+    "releaseNotes": "Initial release"
   },
 
   "dependencies": {
