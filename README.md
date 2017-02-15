@@ -7,6 +7,6 @@ In project.json file add
 
 ```json
 "dependencies": {
-    "Adeptik.CommandLineUtils": "1.0.0"
+    "Adeptik.CommandLineUtils": "1.0.1"
 }
 ```
