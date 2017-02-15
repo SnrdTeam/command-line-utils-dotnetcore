@@ -40,7 +40,7 @@ namespace Adeptik.CommandLineUtils.Extensions
                 throw new ArgumentNullException(nameof(exception));
 
             if (exception is TargetInvocationException && exception.InnerException != null)
-                textWriter.Print(exception.InnerException);
+                Print(textWriter, exception.InnerException, innerExceptionIndent);
             else if (exception is AggregateException)
             {
                 foreach (var e in ((AggregateException)exception).InnerExceptions.Where(x => x != null))
@@ -53,8 +53,8 @@ namespace Adeptik.CommandLineUtils.Extensions
                 var indent = "";
                 for (var e = exception; e != null; e = e.InnerException)
                 {
-                    Console.Write(indent);
-                    Console.WriteLine(e.Message);
+                    textWriter.Write(indent);
+                    textWriter.WriteLine(e.Message);
                     indent += innerExceptionIndent;
                 }
             }
