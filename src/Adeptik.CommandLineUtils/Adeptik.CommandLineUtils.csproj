@@ -4,13 +4,12 @@
     <Description>Adeptik Command Line Utils is lightweight library using for creating console applications.</Description>
     <Copyright>Copyright © Adeptik</Copyright>
     <AssemblyTitle>Adeptik Command Line Utils</AssemblyTitle>
-    <VersionPrefix>1.0.1</VersionPrefix>
     <Authors>Adeptik</Authors>
     <TargetFramework>netstandard1.6</TargetFramework>
     <AssemblyName>Adeptik.CommandLineUtils</AssemblyName>
     <PackageId>Adeptik.CommandLineUtils</PackageId>
     <PackageTags>command-line</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Assembly signed</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/SnrdTeam/command-line-utils-dotnetcore</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/SnrdTeam/command-line-utils-dotnetcore/blob/master/LICENSE</PackageLicenseUrl>
     <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
@@ -19,6 +18,11 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <VersionPrefix>1.0.2</VersionPrefix>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>Adeptik-PublicKey.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <PublicSign>True</PublicSign>
   </PropertyGroup>
 
 </Project>
