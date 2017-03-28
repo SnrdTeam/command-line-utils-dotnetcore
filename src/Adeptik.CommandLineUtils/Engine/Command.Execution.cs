@@ -8,6 +8,9 @@ using System.Text;
 
 namespace Adeptik.CommandLineUtils.Engine
 {
+    /// <summary>
+    /// Команда
+    /// </summary>
     partial class Command
     {
         /// <summary>

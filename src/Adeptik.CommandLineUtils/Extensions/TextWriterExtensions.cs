@@ -6,6 +6,9 @@ using System.Reflection;
 
 namespace Adeptik.CommandLineUtils.Extensions
 {
+    /// <summary>
+    /// Методы расширения для <see cref="TextWriter"/>
+    /// </summary>
     public static class TextWriterExtensions
     {
         /// <summary>

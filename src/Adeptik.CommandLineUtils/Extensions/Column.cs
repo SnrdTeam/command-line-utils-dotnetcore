@@ -8,6 +8,11 @@ namespace Adeptik.CommandLineUtils.Extensions
     /// <typeparam name="T">Тип элемента таблицы</typeparam>
     public class Column<T>
     {
+        /// <summary>
+        /// Создание экземпляра класса <see cref="Column{T}"/>
+        /// </summary>
+        /// <param name="name">Имя столбца таблицы</param>
+        /// <param name="valueSelector">Функция получения значения колонки</param>
         public Column(string name, Func<T, string> valueSelector)
         {
             Name = name;

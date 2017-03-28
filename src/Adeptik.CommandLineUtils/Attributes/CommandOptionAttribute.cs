@@ -8,6 +8,9 @@ namespace Adeptik.CommandLineUtils.Attributes
     [AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = false)]
     public class CommandOptionAttribute : Attribute
     {
+        /// <summary>
+        /// Создание экземпляра класса <see cref="CommandOptionAttribute"/>
+        /// </summary>
         /// <param name="shortName">Краткое имя опции команды</param>
         public CommandOptionAttribute(string shortName = null)
         {

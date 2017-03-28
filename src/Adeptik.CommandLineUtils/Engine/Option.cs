@@ -14,11 +14,21 @@ namespace Adeptik.CommandLineUtils.Engine
         /// </summary>
         public static Option HelpOption { get; } = new Option("help", "h", "Show help");
 
+        /// <summary>
+        /// Создание экземпляра класса <see cref="Option"/>
+        /// </summary>
+        /// <param name="longName">Полное имя опции</param>
+        /// <param name="shortName">Краткое имя опции</param>
+        /// <param name="description">Описание опции</param>
         private Option(string longName, string shortName, string description)
         {
             Initialize(longName, shortName, description);
         }
 
+        /// <summary>
+        /// Создание экземпляра класса <see cref="Option"/> из параметра метода команды
+        /// </summary>
+        /// <param name="commandMethodParameter">Параметр метода команды, соответствующий данной опции</param>
         internal Option(ParameterInfo commandMethodParameter)
         {
             ParameterInfo = commandMethodParameter;
@@ -70,6 +80,9 @@ namespace Adeptik.CommandLineUtils.Engine
             }
         }
 
+        /// <summary>
+        /// Параметр метода команды, соответствующий данной опции
+        /// </summary>
         internal ParameterInfo ParameterInfo { get; }
     }
 }

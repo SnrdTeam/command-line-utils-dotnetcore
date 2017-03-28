@@ -14,6 +14,12 @@ namespace Adeptik.CommandLineUtils.Engine
     {
         private readonly MethodInfo _commandMethod;
 
+        /// <summary>
+        /// Создание экземпляра класса <see cref="Command"/>
+        /// </summary>
+        /// <param name="parent">Родительская команда</param>
+        /// <param name="commandMethod">Метод команды</param>
+        /// <param name="allowStatic">Разрешить, чтобы метод команды был статическим методом</param>
         private Command(Command parent, MethodInfo commandMethod, bool allowStatic = false)
         {
             Parent = parent;

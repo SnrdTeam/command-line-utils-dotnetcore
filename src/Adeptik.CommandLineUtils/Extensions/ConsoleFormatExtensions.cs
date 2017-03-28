@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace Adeptik.CommandLineUtils.Extensions
 {
+    /// <summary>
+    /// Методы расширения для форматирования данных, отображаемых в консоли
+    /// </summary>
     public static class ConsoleFormatExtensions
     {
         /// <summary>
