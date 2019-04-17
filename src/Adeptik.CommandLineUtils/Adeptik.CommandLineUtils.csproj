@@ -21,6 +21,7 @@
     <AssemblyOriginatorKeyFile>Adeptik-PublicKey.snk</AssemblyOriginatorKeyFile>
     <DelaySign>False</DelaySign>
     <PublicSign>True</PublicSign>
+    <Version>2.0.1</Version>
   </PropertyGroup>
 
 </Project>
