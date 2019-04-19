@@ -52,6 +52,9 @@ namespace Adeptik.CommandLineUtils.Engine
                 .Where(x => x != null);
             if (optionNames.Count() != optionNames.Distinct().Count())
                 throw new CommandStructureException("Option name must be unique");
+            string[] helpOptionNames = { Option.HelpOption.ShortName, Option.HelpOption.LongName };
+            if (options.Any(option => helpOptionNames.Contains(option.ShortName) || helpOptionNames.Contains(option.LongName)))
+                throw new CommandStructureException($"Option name cannot be the same as the help option name '-{Option.HelpOption.ShortName}' or '--{Option.HelpOption.LongName}'.");
             Options = options;
 
             var commandsClassType = commandMethod.ReturnType;
